@@ -1,17 +1,23 @@
 package core;
 
 import java.io.BufferedReader;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-
+import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.logging.log4j.EventLogger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Base { //Note to be noted: In this "Base.java" class, we will initialize our browser(s) and also read our ".properties" file, 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Base { 
+//Note to be noted: In this "Base.java" class, we will initialize our browser(s) and also read our ".properties" file, 
 	//which we created in the "input" folder inside "src/test/resources" main folder; The ".properties" file that we created,
 	//(in the "input" folder inside "src/test/resources" main folder) we will store the url(s) of 
 	//the browser(s) so that Base.java class can get the url(s) from ".properties" file and run/launch it for us.
@@ -70,6 +76,40 @@ public class Base { //Note to be noted: In this "Base.java" class, we will initi
 	//Here this method will lauch the browser for us:
 	public static void openBrowser() {
 		driver.get(getUrl());
+	}
+	//Here this method will close/quit browser(s) for us:
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}
+	//Here in this method we will use WebDriverManager so that we don't have to download webDriver for all browsers:
+	public static void browser() {
+		
+		
+		String browserName = getBrowser();
+		
+		switch (browserName) {
+		case "chrome":
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		case "edge":
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			break;
+		default:
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();			
+		}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();//This will delete all cookies...
+		
 	}
 	
 	
