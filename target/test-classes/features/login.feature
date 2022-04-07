@@ -16,18 +16,16 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@smokeTest
-Feature: Title of your feature
-  I want to use this template for my feature file
+@smoke @regression
+Feature: Test Environment Retail-Page
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
+  @loginToTestEnv
+  Scenario: Login to Test Environment Retail Page
+    Given user is on test environment homepage
+    When user click on myaccount button
+    Then user click on login button
+    Then user user enter username and password
+    Then user click on login button
     And check more outcomes
 
   @tag2
