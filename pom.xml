@@ -6,6 +6,7 @@
   <groupId>com.BDDFrameworkHamed</groupId>
   <artifactId>com.BDDFrameworkHamed</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
    
 
   <name>com.BDDFrameworkHamed</name>
@@ -127,7 +128,7 @@
 								<goal>generate</goal>
 							</goals>
 							<configuration>
-								<projectName>com.mavenProjectPractice</projectName>
+								<projectName>com.BDDFrameworkHamed</projectName>
 								<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 								<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
 								<buildNumber>1</buildNumber>
