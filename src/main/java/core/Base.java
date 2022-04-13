@@ -108,7 +108,7 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().deleteAllCookies();//This will delete all cookies...
+		driver.manage().deleteAllCookies();//This will delete all the cookies...
 		
 	}
 	

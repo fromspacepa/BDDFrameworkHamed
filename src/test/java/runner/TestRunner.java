@@ -1,7 +1,6 @@
 package runner;
 
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -22,13 +21,12 @@ import io.cucumber.junit.CucumberOptions;
 	//annotation (@RunWith) so that we can specify what we want to execute and with what to:
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-	features = "C:\\Users\\hamed\\git\\MavinProject\\src\\test\\resources\\features",
-	glue = "C:\\Users\\hamed\\git\\MavinProject\\src\\test\\java\\stepDefinitions",
+	features = "claspath:features",
+	glue = "stepDefinitions",
 	tags = "@loginToTestEnv",
-	dryRun = true,
+	dryRun = false,
 	monochrome = true
 	)
-
 
   	public class TestRunner {
 }
