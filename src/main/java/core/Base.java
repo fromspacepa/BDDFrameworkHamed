@@ -26,12 +26,12 @@ public class Base {
 	public static WebDriver driver; //Import "WebDriver" from (Import 'WebDriver' (org.openqa.selenium))...
 	public static Properties properties;//Import "Properties" from (Import 'Properties' (java.util))...
 	public static Logger logger; //Import "Logger" from (Import 'Logger' (org.apache.log4j))...
-	private String propertyPath = ".src\\test\\resources\\input\\properties.properties";
+	private String propertyPath = ".\\src\\test\\resources\\input\\properties.properties";
 	                             //This above^ is going to be the path to the "properties.properties" file, which we created in the input folder;
 	                             //To get the path of ".properties" file, you need to right click on your mouse on the ".properties" file, then 
 		                         //click on "properties", and then copy the link of location and paste it as a "String" after equal sign 
 	                             //in front of the above^ "propertyPath". And then we will use it later whenever we need it.
-	private String log4jPath = ".src\\test\\resources\\input\\log4j.properties"; 
+	private String log4jPath = ".\\src\\test\\resources\\input\\log4j.properties"; 
 	                             //This above^ is going to be the path to the "log4j.properties" file, which we created in the input folder;
                                  //To get the path of "log4j.properties" file, you need to right click on your mouse on the "log4j.properties" file, then
 	                             //click on "properties", and then copy the link of location and paste as a "String" after equal sign 
