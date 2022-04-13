@@ -24,7 +24,7 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions(
 	features = "C:\\Users\\hamed\\git\\MavinProject\\src\\test\\resources\\features",
 	glue = "C:\\Users\\hamed\\git\\MavinProject\\src\\test\\java\\stepDefinitions",
-	tags = "",
+	tags = "@loginToTestEnv",
 	dryRun = true,
 	monochrome = true
 	)
