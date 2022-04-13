@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.LoginPageObjects;
 
-public class LoginPageSteps extends Base { // Note to be noted: In this "LoginPageSteps.java" class, we will write our actions (.click();,
+public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSteps.java" class, we will write our actions (.click();,
 	// .sendKeys();, and etc)
 	
 	LoginPageObjects login = new LoginPageObjects();
