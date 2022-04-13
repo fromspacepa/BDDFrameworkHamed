@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in runner.TestRunner
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.338 s <<< FAILURE! - in runner.TestRunner
+Login to Test Environment Retail Page(Test Environment Retail-Page)  Time elapsed: 0.098 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "core.Base.properties" is null
+
+Login to Test Environment Retail Page(Test Environment Retail-Page)  Time elapsed: 0.098 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "core.Base.driver" is null
+

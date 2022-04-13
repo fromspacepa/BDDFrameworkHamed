@@ -19,19 +19,23 @@ public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSt
 	@When ("user click on myaccount button")
 	public void user_click_on_myaccount_button() {
 		login.clickOnMyAccountButton();
+		logger.info("My account button was clicked successfully");
 	}
 	@Then ("user click on login button")
 	public void user_click_on_login_button() {
 		login.clickOnLoginButton();
+		logger.info("Login button was clicked successfully");
 	}
 	@Then ("user user enter username and password")
 	public void user_user_enter_username_and_password() {
 		login.enterUserName();
 		login.enterPassword();
+		logger.info("Username and Password entered successfully");
 	}
 	@Then ("user click on login button to login to the page")
 	public void user_click_on_login_button_to_login_to_the_page() {
 		login.clickOnLoginButtonMain();
+		logger.info("Login button was clicked successfully");
 
 }
 	

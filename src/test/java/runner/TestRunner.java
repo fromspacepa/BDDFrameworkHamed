@@ -21,12 +21,12 @@ import io.cucumber.junit.CucumberOptions;
 	//annotation (@RunWith) so that we can specify what we want to execute and with what to:
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-	features = "claspath:features",
+	features = "classpath:features",
 	glue = "stepDefinitions",
 	tags = "@loginToTestEnv",
 	dryRun = false,
 	monochrome = true
-	)
+	) 
 
   	public class TestRunner {
 }

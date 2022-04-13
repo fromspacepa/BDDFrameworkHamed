@@ -19,7 +19,7 @@ public class Initializer extends Base {
 		browser();//this line will launch our browser.
 		openBrowser();//this line will launch the URL for us.
 	}
-	
+	  
 	@After
 	public void afterHooks(Scenario scenario) {
 		tearDown();

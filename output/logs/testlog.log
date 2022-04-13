@@ -1,0 +1,24 @@
+2022-04-13 18:06:58,257 - logger_File -INFO - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-13 18:07:00,731 - logger_File -INFO - Text verified!
+2022-04-13 18:07:00,732 - logger_File -INFO - Homepage validated successfully
+2022-04-13 18:07:00,764 - logger_File -INFO - My account button was clicked successfully
+2022-04-13 18:07:00,988 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:07:01,077 - logger_File -INFO - Username and Password entered successfully
+2022-04-13 18:07:01,270 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:07:01,361 - logger_File -INFO - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-13 18:08:20,347 - logger_File -INFO - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-13 18:08:22,686 - logger_File -INFO - Text verified!
+2022-04-13 18:08:22,686 - logger_File -INFO - Homepage validated successfully
+2022-04-13 18:08:22,717 - logger_File -INFO - My account button was clicked successfully
+2022-04-13 18:08:22,914 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:08:23,002 - logger_File -INFO - Username and Password entered successfully
+2022-04-13 18:08:23,204 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:08:23,291 - logger_File -INFO - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-13 18:10:46,306 - logger_File -INFO - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-13 18:10:48,680 - logger_File -INFO - Text verified!
+2022-04-13 18:10:48,680 - logger_File -INFO - Homepage validated successfully
+2022-04-13 18:10:48,714 - logger_File -INFO - My account button was clicked successfully
+2022-04-13 18:10:48,914 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:10:48,999 - logger_File -INFO - Username and Password entered successfully
+2022-04-13 18:10:49,190 - logger_File -INFO - Login button was clicked successfully
+2022-04-13 18:10:49,273 - logger_File -INFO - ScenarioLogin to Test Environment Retail Page PASSED
