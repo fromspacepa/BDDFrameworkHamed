@@ -5,12 +5,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjects.LoginPageObjects;
+import pageObjects.LoginPage;
 
 public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSteps.java" class, we will write our actions (.click();,
 	// .sendKeys();, and etc)
 	
-	LoginPageObjects login = new LoginPageObjects();
+	LoginPage login = new LoginPage();
 		
 	@Given ("^user is on test environment homepage$")
 	public void user_is_on_test_environment_homepage() {

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import core.Base;
 
-public class LoginPageObjects extends Base{ // Note to be noted: In this "LoginPageObjects.java" class, we will store our locators/webElements for login feature.
+public class LoginPage extends Base{ // Note to be noted: In this "LoginPageObjects.java" class, we will store our locators/webElements for login feature.
 
 	
 	//>>>In this class we are storing our "PageObjects/Attributes/Locators":
@@ -16,7 +16,7 @@ public class LoginPageObjects extends Base{ // Note to be noted: In this "LoginP
 	//Once we get all the "Locators" for our elements, we use the "@FindBy" annotation (importing from Selenium) to store our "PageObjects";
 	//We then can write a "get method" to access our PagObjects in the "stepDefinition Class".
 	//We will store our elements as "private WebElement" so that we can only access elements through get method.
-	public LoginPageObjects() {
+	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath ="//a[text()='TEST ENVIRONMENT']")

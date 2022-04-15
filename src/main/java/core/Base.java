@@ -103,7 +103,8 @@ public class Base {
 			break;
 		default:
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();			
+			driver = new ChromeDriver();
+			
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
