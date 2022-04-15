@@ -1,11 +1,14 @@
 package stepDefinitions;
 
+import java.io.IOException;
+
 import core.Base;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.LoginPage;
+import utilities.Utilities;
 
 public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSteps.java" class, we will write our actions (.click();,
 	// .sendKeys();, and etc)
@@ -13,9 +16,10 @@ public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSt
 	LoginPage login = new LoginPage();
 		
 	@Given ("^user is on test environment homepage$")
-	public void user_is_on_test_environment_homepage() {
+	public void user_is_on_test_environment_homepage() throws IOException {
 		login.validateHomePage();
 		logger.info("Homepage validated successfully");
+		Utilities.takeScreenShot("Homepage");
 	}
 	@When ("user click on myaccount button")
 	public void user_click_on_myaccount_button() {

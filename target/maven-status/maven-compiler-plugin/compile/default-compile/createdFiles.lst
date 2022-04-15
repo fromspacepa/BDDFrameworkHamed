@@ -1,3 +1,4 @@
-utilities\Utilities.class
 core\Base.class
-pageObjects\LoginPageObjects.class
+utilities\CucumberReportingConfig.class
+pageObjects\LoginPage.class
+utilities\Utilities.class

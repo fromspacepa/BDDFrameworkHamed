@@ -1,8 +1,10 @@
 package runner;
 
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import utilities.CucumberReportingConfig;
 
 	//>>>Note to be noted: In this "Runner.java" class, we will write our code so that we can glue the feature files with
 	//stepDefinitions and run our tests.
@@ -13,6 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 	//tags : Means, by adding the tags we will specify which feature(s), scenario(s) or scenario outline should be executed.
 	//dryRun : Means, if set to true, it will check and make sure we have stepDefinition methods for each step in feature file
 			   //if set to false, it will execute the test case for us.
+    //strict : Means, it will make our scenarios as "Failed" in case OR if there is any stepDefinition methods missing for testSteps.
 	//monochrome : Means, it will help us to print the stepDefinition methods in clean format in the console so that we can use
 				   //it in our stepDefinition class.
 	//plugin : Means, that with adding plugin(s) here it will generate reports. 
@@ -23,10 +26,22 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions(
 	features = "classpath:features",
 	glue = "stepDefinitions",
-	tags = "@loginToTestEnv",
+	tags = "@login",
 	dryRun = false,
-	monochrome = true
+	strict = true,
+	monochrome = true,
+	plugin = {
+			"pretty",
+			"html:target/site/cucumber-pretty",
+			"json:target/cucumber.json"
+	},
+	publish = true
 	) 
 
   	public class TestRunner {
+		
+		@AfterClass  
+		public static void generateReport() {
+			CucumberReportingConfig.reportConfig();
+		}
 }

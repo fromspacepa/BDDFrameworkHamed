@@ -19,7 +19,7 @@
 @smoke @regression
 Feature: Test Environment Retail-Page
 
-  @loginToTestEnv
+  @login
   Scenario: Login to Test Environment Retail Page
     Given user is on test environment homepage
     When user click on myaccount button
@@ -27,7 +27,7 @@ Feature: Test Environment Retail-Page
     Then user user enter username and password
     Then user click on login button to login to the page
 
-  @tag2
+ @tag2
   Scenario Outline: Title of your scenario outline
     Given I want to write a step with <name>
     When I check for the <value> in step
