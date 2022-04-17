@@ -47,10 +47,17 @@ public class LoginPage extends Base{ // Note to be noted: In this "LoginPageObje
 		loginButton.click();
 	}
 	public void enterUserName() {
-		userNameField.sendKeys("email@email.com");
+		userNameField.sendKeys("joht@email.com");
 	}
 	public void enterPassword() {
-		passwordField.sendKeys("1234");
+		passwordField.sendKeys("123456");
+	}
+	//Below two methods are for Examples keyword practice:
+	public void enterUserNameWithParam(String username) {
+			userNameField.sendKeys(username);
+	}
+	public void enterPasswordWithParam(String password) {
+			passwordField.sendKeys(password);
 	}
 	public void clickOnLoginButtonMain() {
 		loginButtonMain.click();

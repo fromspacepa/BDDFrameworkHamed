@@ -3,6 +3,7 @@ package stepDefinitions;
 import java.io.IOException;
 
 import core.Base;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -26,18 +27,23 @@ public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSt
 		login.clickOnMyAccountButton();
 		logger.info("My account button was clicked successfully");
 	}
-	@And ("user click on login button")
-	public void user_click_on_login_button() {
+	@Then ("user click on login button")
+	public void user_click_on_login_button() { 
 		login.clickOnLoginButton();
 		logger.info("Login button was clicked successfully");
 	}
-	@Then ("user user enter username and password")
-	public void user_user_enter_username_and_password() {
+	@Then ("user enter username and password")
+	public void user_enter_username_and_password() {
 		login.enterUserName();
 		login.enterPassword();
 		logger.info("Username and Password entered successfully");
 	}
-	@And ("user click on login button to login to the page")
+	@Then("user user enter username {string} and password {string}")
+	public void user_user_enter_username_and_password(String username, String password) {
+	 login.enterUserNameWithParam(username);
+	 login.enterPasswordWithParam(password);
+ 	}
+	@Then ("user click on login button to login to the page")
 	public void user_click_on_login_button_to_login_to_the_page() {
 		login.clickOnLoginButtonMain();
 		logger.info("Login button was clicked successfully");

@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.662 s - in runner.TestRunner
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 10.697 s <<< FAILURE! - in runner.TestRunner
+Login to Test Environment Retail Page #2(Test Environment Retail-Page)  Time elapsed: 3.41 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user user enter username 'eagles@tekschool.us' and password 'eagles'' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user user enter username {string} and password {string}")
+public void user_user_enter_username_and_password(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Login to Test Environment Retail Page #3(Test Environment Retail-Page)  Time elapsed: 2.537 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user user enter username 'hawks@tekschool.us' and password 'hawks'' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user user enter username {string} and password {string}")
+public void user_user_enter_username_and_password(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Login to Test Environment Retail Page #4(Test Environment Retail-Page)  Time elapsed: 2.537 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user user enter username 'falcons@tekschool.us' and password 'falcons'' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user user enter username {string} and password {string}")
+public void user_user_enter_username_and_password(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
