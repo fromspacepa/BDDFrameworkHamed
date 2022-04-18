@@ -368,3 +368,29 @@
 2022-04-18 08:23:28,513 [main] INFO logger_File - Login button was clicked successfully
 2022-04-18 08:23:29,016 [main] INFO logger_File - Login button was clicked successfully
 2022-04-18 08:23:29,094 [main] INFO logger_File - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-18 09:40:51,961 [main] INFO logger_File - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-18 09:41:15,470 [main] INFO logger_File - Text verified!
+2022-04-18 09:41:15,470 [main] INFO logger_File - Homepage validated successfully
+2022-04-18 09:41:15,789 [main] INFO logger_File - My account button was clicked successfully
+2022-04-18 09:41:16,058 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:16,434 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:16,534 [main] INFO logger_File - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-18 09:41:16,550 [main] INFO logger_File - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-18 09:41:28,538 [main] INFO logger_File - Text verified!
+2022-04-18 09:41:28,539 [main] INFO logger_File - Homepage validated successfully
+2022-04-18 09:41:28,749 [main] INFO logger_File - My account button was clicked successfully
+2022-04-18 09:41:29,062 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:29,647 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:29,742 [main] INFO logger_File - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-18 09:41:29,756 [main] INFO logger_File - ScenarioLogin to Test Environment Retail PageStarted
+2022-04-18 09:41:36,463 [main] INFO logger_File - Text verified!
+2022-04-18 09:41:36,464 [main] INFO logger_File - Homepage validated successfully
+2022-04-18 09:41:36,675 [main] INFO logger_File - My account button was clicked successfully
+2022-04-18 09:41:36,961 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:38,147 [main] INFO logger_File - Login button was clicked successfully
+2022-04-18 09:41:38,244 [main] INFO logger_File - ScenarioLogin to Test Environment Retail Page PASSED
+2022-04-18 12:32:30,080 [main] INFO logger_File - ScenarioRegister with Test Environment WebpageStarted
+2022-04-18 12:32:36,484 [main] INFO logger_File - Text verified!
+2022-04-18 12:32:36,484 [main] INFO logger_File - Homepage validated successfully
+2022-04-18 12:32:36,765 [main] INFO logger_File - My account button was clicked successfully
+2022-04-18 12:32:36,874 [main] INFO logger_File - ScenarioRegister with Test Environment Webpage UNDEFINED

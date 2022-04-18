@@ -6,5 +6,10 @@ Background:
     Given user is on test environment homepage
     When user click on myaccount button
     
-  Scenario: Login to Test Environment Retail Page
-    Then user click on login button
+  Scenario: Register with Test Environment Webpage
+  	And user click on register button
+  	And user fill registration form with information below
+  	|firstName|lastName|email|telephone|password|confirmPassword|
+  	|John|Colunga|johncolunga2345@gmail.com|4024443434|johncolunga2345|johncolunga2345|
+  	And user click on agree to terms checkbox
+  	And user click on continue button
