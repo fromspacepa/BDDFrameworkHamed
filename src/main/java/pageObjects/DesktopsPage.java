@@ -14,5 +14,6 @@ public class DesktopsPage extends Base{
 	}
 	@FindBy(xpath = "//a[text()='Show All Desktops']")
 	private WebElement desktops;
+	@FindBy(xpath = "")
 
 }
