@@ -19,7 +19,7 @@ public class LoginPage extends Base{ // Note to be noted: In this "LoginPageObje
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath ="//a[text()='TEST ENVIRONMENT']")
+	@FindBy(xpath = "//a[text()='TEST ENVIRONMENT']")
 	private WebElement textToValidate;
 	@FindBy(xpath = "//span[text()='My Account']")
 	private WebElement myAccountButton;	
