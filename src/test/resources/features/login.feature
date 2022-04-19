@@ -5,16 +5,17 @@ Feature: Test Environment Retail-Page
 Background: 
     Given user is on test environment homepage
     When user click on myaccount button
-    
+  @login @endtoend #Using @login and @endtoend tags will run the login test case and one more test case together.
+#Using @login tag will only run the login test case.   
   Scenario: Login to Test Environment Retail Page
     Then user click on login button
-    Then user user enter username and password
+    Then user enter username and password
     Then user click on login button to login to the page
 #we can use placeholder <> to provide the title of data in the example table    
-  @login
+ 
   Scenario Outline: Login to Test Environment Retail Page
     Then user click on login button
-    Then user user enter username '<username>' and password '<password>'
+    Then user enter username '<username>' and password '<password>'
     Then user click on login button to login to the page
     
     Examples:

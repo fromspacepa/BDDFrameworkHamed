@@ -26,7 +26,8 @@ import utilities.CucumberReportingConfig;
 	@CucumberOptions(
 	features = "classpath:features",
 	glue = "stepDefinitions",
-	tags = "@login",
+	tags = "@endtoend",//<<< @endtoend tag is used when testing multiple test cases
+  //tags = "@login",//<<< @login tag OR any other tag is used when testing a single test case.
 	dryRun = false,
 	strict = true,
 	monochrome = true,

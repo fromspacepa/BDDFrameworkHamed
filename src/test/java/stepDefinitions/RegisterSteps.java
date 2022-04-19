@@ -16,6 +16,7 @@ public class RegisterSteps extends Base{
 	@And("user click on register button")
 	public void user_click_on_register_button() {
 		register.clickOnRegister();
+		logger.info("Register button was clicked successfully");
 	}
 
 	@And("user fill registration form with information below")
@@ -30,17 +31,24 @@ public class RegisterSteps extends Base{
 		register.enterTelephone(data.get(0).get("telephone"));
 		register.enterPassword(data.get(0).get("password"));
 		register.enterconfirmPassword(data.get(0).get("confirmPassword"));
-		
+		logger.info("User data was entered successfully");
 	}
 
 	@And("user click on agree to terms checkbox")
 	public void user_click_on_agree_to_terms_checkbox() {
-
+		register.clickOnConfirmTermsCheckBox();
+		logger.info("Agree to terms check box button was clicked successfully");
 	}
 
 	@And("user click on continue button")
 	public void user_click_on_continue_button() {
-
+		register.clickOnContinueButton();
+		logger.info("Continue button was clicked successfully");
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
-		}
+}

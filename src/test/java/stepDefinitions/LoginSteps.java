@@ -38,8 +38,8 @@ public class LoginSteps extends Base { // Note to be noted: In this "LoginPageSt
 		login.enterPassword();
 		logger.info("Username and Password entered successfully");
 	}
-	@Then("user user enter username {string} and password {string}")
-	public void user_user_enter_username_and_password(String username, String password) {
+	@Then("user enter username {string} and password {string}")
+	public void user_enter_username_and_password(String username, String password) {
 	 login.enterUserNameWithParam(username);
 	 login.enterPasswordWithParam(password);
  	}
