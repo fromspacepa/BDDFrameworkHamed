@@ -1,5 +1,14 @@
-core\Base.class
-utilities\CucumberReportingConfig.class
 pageObjects\RegisterPage.class
+pageObjects\HomePage.class
+pageObjects\ComponentsPage.class
+pageObjects\PhonesPDAsPage.class
+pageObjects\Mp3PlayersPage.class
+pageObjects\SoftwarePage.class
+pageObjects\LaptopsNoteBookPage.class
+pageObjects\CamerasPage.class
 pageObjects\LoginPage.class
+core\Base.class
+pageObjects\TabletsPage.class
+utilities\CucumberReportingConfig.class
 utilities\Utilities.class
+pageObjects\DesktopsPage.class

@@ -3,13 +3,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.BDDFrameworkHamed</groupId>
-  <artifactId>com.BDDFrameworkHamed</artifactId>
+  <groupId>com.CapstoneHamed</groupId>
+  <artifactId>com.CapstoneHamed</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
    
 
-  <name>com.BDDFrameworkHamed</name>
+  <name>com.CapstoneHamed</name>
     <url>http://maven.apache.org</url>
 
   <properties>
@@ -128,7 +128,7 @@
 								<goal>generate</goal>
 							</goals>
 							<configuration>
-								<projectName>com.BDDFrameworkHamed</projectName>
+								<projectName>com.CapstoneHamed</projectName>
 								<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 								<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
 								<buildNumber>1</buildNumber>
