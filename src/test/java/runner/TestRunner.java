@@ -26,7 +26,7 @@ import utilities.CucumberReportingConfig;
 	@CucumberOptions(
 	features = "classpath:features",
 	glue = "stepDefinitions",
-	tags = "@endtoend",//<<< 
+	tags = "@endtoend",//<<< here tags means OR used for tagging test cases to be tested.
   //tags = "@login",//<<< @login tag OR any other tag is used when testing a single test case.
 	dryRun = false,
 	strict = true,
