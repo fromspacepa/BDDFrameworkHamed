@@ -23,6 +23,7 @@ public class Base {
      * which we created in the "input" folder inside "src/test/resources" main folder; The ".properties" file that we created,
      * we will store the url(s) of the browser(s) so that Base.java class can get the url(s) from ".properties" file and run/launch it for us.
      * So, this is going to be our "Base" class.
+     * 
      */
 	
 	public static WebDriver driver; //Import "WebDriver" from (Import 'WebDriver' (org.openqa.selenium))...
